@@ -1,0 +1,26 @@
+{
+	"manifest_version":2,
+	"name":"Budget Manager",
+	"version":"1.0",
+	"description":"This is traks your overall spendings.",
+	"icons":{
+		"64":"icon64.png"
+	},
+	"browser_action":{
+		"default_icon":"icon64.png",
+		"default_popup":"popup.html"
+	},
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"persistent":false
+	},
+
+	"permissions":[
+		"storage",
+		"notifications",
+		"contextMenus"
+	],
+
+	"options_page":"options.html"
+}
